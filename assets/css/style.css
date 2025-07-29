@@ -472,7 +472,120 @@ main {
   transform: scale(1.1); /* Slightly increase the size */
 }
 
+.skills-grid {
+  margin-top: 2rem;
+}
 
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.skill-name {
+  font-weight: 600;
+  min-width: 180px; /* adjust for alignment */
+  color:var(--light-gray);
+}
+
+.skill-level {
+  color: var(--orange-yellow-crayola);
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+}
+.skill-subheading {
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--vegas-gold);
+}
+.project-img img {
+  width: 100%;
+  height: 200px; /* or any height you want */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px; /* optional, for rounded corners */
+}
+
+
+/* Dropdown Custom Card */
+.dropdown-card {
+  position: relative;
+  padding: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  background: var(--border-gradient-onyx);
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.timeline-text.short {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  margin-right: 10px;
+  
+}
+
+.timeline-text.full {
+  display: none;
+  margin-top: 5px;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+}
+
+/* Top-right toggle styled into the corner */
+.corner-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--border-gradient-onyx);
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 10px;
+  padding: 6px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease;
+}
+
+.corner-toggle ion-icon {
+  font-size: 18px;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
 
 
 /*-----------------------------------*\
@@ -1373,6 +1486,122 @@ textarea.form-input::-webkit-resizer { display: none; }
   .project-img,
   .blog-banner-box { height: auto; }
 
+
+  .skills-grid {
+  margin-top: 2rem;
+}
+
+.skills-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.skill-name {
+  font-weight: 300;
+  min-width: 180px; /* adjust for alignment */
+  color:var(--light-gray);
+  font-size: 0.7rem;
+}
+
+.skill-level {
+  color: var(--orange-yellow-crayola);
+  font-size: 0.7rem;
+  letter-spacing: 0.5rem;
+}
+.skill-subheading {
+  font-weight: 400;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--vegas-gold);
+}
+.project-img img {
+  width: 100%;
+  height: 200px; /* or any height you want */
+  object-fit: cover;
+  display: block;
+  border-radius: 10px; /* optional, for rounded corners */
+}
+
+
+/* Dropdown Custom Card */
+.dropdown-card {
+  position: relative;
+  padding: 10px;
+  padding-top: 10px;
+  border-radius: 15px;
+  background: var(--border-gradient-onyx);
+  box-shadow: var(--shadow-2);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.timeline-text.short {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+  margin-right: 10px;
+  
+}
+
+.timeline-text.full {
+  display: none;
+  margin-top: 5px;
+  color: var(--white-2);
+  font-size: var(--fs-6);
+}
+
+/* Top-right toggle styled into the corner */
+.corner-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: var(--border-gradient-onyx);
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 10px;
+  padding: 6px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-2);
+  transition: transform 0.3s ease;
+}
+
+.corner-toggle ion-icon {
+  font-size: 18px;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
 }
 
 
@@ -1696,7 +1925,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-name {
   font-weight: 600;
-  min-width: 60px; /* adjust for alignment */
+  min-width: 180px; /* adjust for alignment */
   color:var(--light-gray);
 }
 
@@ -1912,7 +2141,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-name {
   font-weight: 600;
-  min-width: 60px; /* adjust for alignment */
+  min-width: 180px; /* adjust for alignment */
   color:var(--light-gray);
 }
 
@@ -2145,7 +2374,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-name {
   font-weight: 600;
-  min-width: 60px; /* adjust for alignment */
+  min-width: 180px; /* adjust for alignment */
   color:var(--light-gray);
 }
 
@@ -2428,7 +2657,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-name {
   font-weight: 600;
-  min-width: 60px; /* adjust for alignment */
+  min-width: 180px; /* adjust for alignment */
   color:var(--light-gray);
 }
 
