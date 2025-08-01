@@ -412,20 +412,106 @@
         </section>
 
        <!-- Technical Skills -->
-       <section class="skills-grid">
+        <style>
+
+
+        .stars {
+            display: flex;
+            gap: 10px;
+        }
+
+        .star {
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        /* Bronze star */
+        .star.bronze {
+            color: #CD853F;
+            filter: drop-shadow(0 0 8px #CD853F);
+        }
+
+        /* Silver star */
+        .star.silver {
+            color: #C0C0C0;
+            filter: drop-shadow(0 0 8px #C0C0C0);
+        }
+
+        /* Gold star */
+        .star.gold {
+            color: #FFD700;
+            filter: drop-shadow(0 0 8px #FFD700);
+        }
+
+        /* Platinum star */
+        .star.platinum {
+            color: #E5E4E2;
+            filter: drop-shadow(0 0 8px #E5E4E2);
+        }
+
+        /* Inactive/unachieved star */
+        .star.inactive {
+            color: rgba(255, 255, 255, 0.2);
+            filter: none;
+        }
+
+        /* Blinking animation for current level */
+        .star.current {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 50% { 
+                opacity: 1; 
+                transform: scale(1);
+            }
+            25% { 
+                opacity: 0.6; 
+                transform: scale(1.2);
+            }
+            75% { 
+                opacity: 0.8; 
+                transform: scale(0.9);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+             
+            .star {
+                font-size: 0.5rem;
+            }
+            
+            .skill-item {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+        }
+    </style>
+<section class="skills-grid">
   <h3 class="h3">Technical Skills</h3>
   <div class="skills-table">
 
     <!-- Programming & Tools -->
-    <h4 class="skill-subheading">Programming & Tools</h4>
+    <h4 class="skill-subheading">Programming & Tools 
+    <div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold current">★</span>
+                <span class="star inactive">★</span>
+    </div></h4>
     <div class="skill-row">
-      <span class="skill-name">Python (Pandas, NumPy, Scikit-learn)</span>
+        <span class="skill-name">Python (Pandas, NumPy, Scikit-learn)</span>
     </div>
     <div class="skill-row">
-  <span class="skill-name">
-    SQL (SELECT, JOINs, GROUP BY, Subqueries, CTEs, Window Functions, Aggregations, Optimization)
-  </span>
-</div>
+    <span class="skill-name">
+     SQL (SELECT, JOINs, GROUP BY, Subqueries, CTEs, Window Functions, Aggregations, Optimization)
+    </span>
+  </div>
 
     <div class="skill-row">
       <span class="skill-name">Git, GitHub</span>
@@ -450,7 +536,12 @@
     </div>
 
     <!-- Data Processing & Analysis -->
-    <h4 class="skill-subheading">Data Processing & Analysis</h4>
+    <h4 class="skill-subheading">Data Processing & Analysis<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold">★</span>
+                <span class="star platinum current">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">Data Cleaning</span>
     </div>
@@ -468,7 +559,12 @@
     </div>
 
     <!-- Machine Learning -->
-    <h4 class="skill-subheading">Machine Learning</h4>
+    <h4 class="skill-subheading">Machine Learning<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold current">★</span>
+                <span class="star inactive">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">Supervised & Unsupervised Learning</span>
     </div>
@@ -492,7 +588,12 @@
     </div>
 
     <!-- NLP -->
-    <h4 class="skill-subheading">Natural Language Processing (NLP)</h4>
+    <h4 class="skill-subheading">Natural Language Processing (NLP)<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold current">★</span>
+                <span class="star inactive">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">Transformer Architectures (BERT, DistilBERT, Pegasus, BART)</span>
     </div>
@@ -507,7 +608,12 @@
     </div>
 
     <!-- Data Visualization -->
-    <h4 class="skill-subheading">Data Visualization</h4>
+    <h4 class="skill-subheading">Data Visualization<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold">★</span>
+                <span class="star platinum current">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">Tableau</span>
     </div>
@@ -519,7 +625,12 @@
     </div>
 
     <!-- Databases & Cloud -->
-    <h4 class="skill-subheading">Databases & Cloud</h4>
+    <h4 class="skill-subheading">Databases & Cloud<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold current">★</span>
+                <span class="star inactive">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">MySQL</span>
     </div>
@@ -528,7 +639,12 @@
     </div>
 
     <!-- Soft Skills -->
-    <h4 class="skill-subheading">Soft Skills</h4>
+    <h4 class="skill-subheading">Soft Skills<div class="stars">
+                <span class="star bronze">★</span>
+                <span class="star silver">★</span>
+                <span class="star gold">★</span>
+                <span class="star platinum current">★</span>
+    </div></h4>
     <div class="skill-row">
       <span class="skill-name">Cross-functional Communication</span>
     </div>
@@ -537,7 +653,27 @@
     </div>
 
   </div>
-       </section>
+</section>
+    <script>
+        // Add hover effects
+        const stars = document.querySelectorAll('.star:not(.inactive)');
+        
+        stars.forEach(star => {
+            star.addEventListener('mouseenter', function() {
+                if (!this.classList.contains('current')) {
+                    this.style.transform = 'scale(1.3)';
+                }
+            });
+            
+            star.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('current')) {
+                    this.style.transform = 'scale(1)';
+                }
+            });
+        });
+    </script>
+
+      
       </article>
       <article class="projects" data-page="projects">
   <header>
