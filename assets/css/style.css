@@ -505,6 +505,8 @@ main {
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+   display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
@@ -1521,6 +1523,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+   display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
@@ -1940,6 +1944,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+   display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
@@ -2156,6 +2162,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+   display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
@@ -2389,6 +2397,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+   display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
@@ -2672,6 +2682,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   margin-bottom: 0.5rem;
   font-size: 1rem;
   color: var(--vegas-gold);
+  display: flex;
+  gap: 15px
 }
 .project-img img {
   width: 100%;
