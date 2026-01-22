@@ -919,24 +919,7 @@ main {
 /**
  * education and experience 
  */
-.resume-btn-left {
-  justify-content: flex-start !important;
-}
 
-.resume-btn-left .form-btn {
-  margin-left: 0 !important;
-}
-.resume-email-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.resume-note {
-  font-size: 0.85rem;
-  color: #aaa;
-  margin-top: 6px;
-}
 
 
 
