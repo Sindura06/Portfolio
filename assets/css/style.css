@@ -1707,7 +1707,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .info-content .name { margin-bottom: 15px; }
 
-  .info-content .title { padding: 5px 18px; }
+.info-content .title {
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  line-height: 1.4;
+}
 
   .info_more-btn {
     top: -30px;
