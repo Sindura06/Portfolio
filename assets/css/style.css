@@ -1722,10 +1722,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .info-content .title {
   white-space: normal;
+  overflow: visible;
+  font-size: 11px;
+  text-overflow: unset;
   word-break: break-word;
   text-align: center;
   line-height: 1.4;
 }
+
 
   .info_more-btn {
     top: -30px;
@@ -1744,10 +1748,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .contacts-list { gap: 20px; }
 
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
-  }
+  .contact-item {
+  align-items: center;
+}
+
+.contact-info * {
+  font-size: 13px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+
+
 
 
 
